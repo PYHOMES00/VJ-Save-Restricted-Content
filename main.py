@@ -9,12 +9,12 @@ import threading
 import json
 from os import environ
 
-bot_token = environ.get("TOKEN", "7130390519:AAERXi5ipDOsMDcCBLMc73mQQWoS7hH5z5U") 
-api_hash = environ.get("HASH", "4022d5686b9b7a7cf8891205921a0ab3") 
-api_id = int(environ.get("ID", "28243586"))
+bot_token = environ.get("TOKEN", "") 
+api_hash = environ.get("HASH", "") 
+api_id = int(environ.get("ID", ""))
 bot = Client("mybot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 
-ss = environ.get("STRING", "BQGu9oIABHrhxESk06ElWj4OZ7PAWdyd9NxpoafSP41hSk2glhFDhXxA6-_gEc86Wg3eW4wqfi4qVR5xZ_aT4FhykzKn_DWN2cfnG4sr-Avxc94Ao5aMUujO-7OFruW6CavALJ-j_UgIkAPLwzckMS2Rfn3-eBtQhUyV5Om_iRhDptqAKQS3onjoelLQwOeOr_q9fh-8sKFD2f5RfxUjg_LcU_ilbuVgVg6HxWI0TJN-aSz41IhSir6mB726kXY2Vj8oAbIo5USG10_DJ4GuMe8A6SdMHLQ75ouMPhaXuGHlPs0UGg7b_Xx9fiJxm6HobaDspFv--rUdaFzg2nSkZZMwlJOKxQAAAAGdBVdrAA")
+ss = environ.get("STRING", "")
 if ss is not None:
 	acc = Client("myacc" ,api_id=api_id, api_hash=api_hash, session_string=ss)
 	acc.start()
